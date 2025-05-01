@@ -1,0 +1,108 @@
+body {
+  font-family: 'Open Sans' ;
+  margin: 0;
+  padding: 0;
+  background-image: url(/src/assets/barbeariaBackground.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* ocupa a altura inteira */
+}
+
+  
+  header .Logotipo {
+    position: absolute;
+    top: 0;
+    left : 30px;
+    width: 130px;
+  }
+  
+  header {
+    background-color: rgb(0, 0, 0);
+    opacity:90%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif ;
+    font:bolder;
+    font-size: 50px;
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    padding-top: 10px;
+    padding-inline: 200px;
+    font-size: 20px;
+  }
+  
+  a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.2s ease; /* Transição para suavizar o hover */
+  }
+
+  header a:hover {
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    color: #f1c40f; /* Destaque ao passar o mouse */
+  }
+  
+  
+
+  .instagram{
+    width: 30px;
+    height: 30px;
+  }
+
+  nav ul .separador {
+    width: 1px;       /* largura da coluna */
+    height: 20px;     /* altura da coluna */
+    background-color: white; /* ou outra cor que combine */
+    opacity: 0.5;     /* opcional: deixa mais suave */
+  }
+
+  .background-barbearia {
+    position: relative;
+    background-image: url('/src/assets/barbearia-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 130px); /* altura da tela menos o header */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+    font-family: helvetica;
+}
+
+/* O overlay escuro */
+.background-barbearia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* preto com 50% de transparência */
+    z-index: 1;
+}
+
+.background-barbearia > * {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adicionando sombra ao texto para melhorar a legibilidade */
+}
+
+.background-barbearia > div {
+  max-width: 800px;
+  padding: 40px;
+}
