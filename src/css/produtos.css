@@ -126,6 +126,14 @@ body {
   font-size: 19px;
 }
 
+.pagina__branca {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff8ff;
+  padding-top: 50px; /* ou o que for necessário */
+}
+
+
 .botao__agendar {
   display: inline-block;
   padding: 14px 32px;
@@ -168,13 +176,6 @@ body {
 .botao__agendar:active {
   transform: translateY(1px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.pagina__branca {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #fff8ff;
-  padding-top: 50px; /* ou o que for necessário */
 }
 .apresentacao{
   margin: 5%;
