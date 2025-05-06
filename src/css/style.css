@@ -25,8 +25,6 @@ body {
     text-align: center;
     font-family: 'Playfair Display', serif ;
     font:bolder;
-    font-size: 50px;
-  }
   
   header ul {
     display: flex;
@@ -52,8 +50,6 @@ body {
     color: #f1c40f; /* Destaque ao passar o mouse */
   }
   
-  
-
   .instagram{
     width: 30px;
     height: 30px;
