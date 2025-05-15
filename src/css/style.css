@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+  --cor-primaria: rgb(23, 23, 23);
+  --cor-secundaria:  #f1c40f;
+
+  --fonte-principal: "Bebas Neue", sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,18 +20,11 @@ html, body {
 
 
 body {
-    font-family: 'Open Sans';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
   }
-
-.responsivo-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
   
   header .Logotipo {
     position: absolute;
@@ -51,7 +52,7 @@ body {
     padding-top: 10px;
     padding-inline: 200px;
     font-size: 25px;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: var(--fonte-principal);
   }
   
   a {
@@ -67,7 +68,7 @@ body {
     color: #f1c40f; /* Destaque ao passar o mouse */
   }
   
-  .instagram{
+  .instagram, .facebook{
     width: 30px;
     height: 30px;
   }
@@ -92,9 +93,13 @@ body {
     justify-content: center;
     text-align: center;
     font-size: x-large;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: var(--fonte-principal);
+    
 }
 
+.titulo{
+  letter-spacing: 2px;
+}
 
 /* O overlay escuro */
 .background__barbearia::before {
@@ -104,7 +109,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* preto com 30% de transparência */
+    background-color: rgba(0, 0, 0, 0.6); /* preto com 30% de transparência */
     z-index: 1;
 }
 
@@ -129,7 +134,7 @@ body {
 .botao__agendar {
   display: inline-block;
   padding: 14px 32px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -185,7 +190,7 @@ body {
 .apresentacao__conteudo {
   width: 550px;
   font-size: 25px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: var(--fonte-principal);
 }
 
 .apresentacao__conteudo__titulo{
@@ -198,3 +203,68 @@ body {
   margin-right: 50px;
 }
 
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(23, 23, 23);
+    color: #fff;
+    padding: 20px 0;
+    font-family: var(--fonte-secundaria);
+    font-size: 15px;
+  }
+
+.rodape__informacoes__esquerda{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: var(--fonte-secundaria);
+  font-size: 10px;
+  margin-bottom: 1.5%;
+  
+}
+
+  .rodape__logotipo{
+    width: 150px;
+    height: 150px;
+  }
+  
+  .rodape__informacoes__direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10em;
+  }
+
+  .redes-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .whatsapp{
+    width: 25px;
+    height: 25px;
+  }
+
+  .phone{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  .telefone{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+    margin: 0.5em 2.5em 0 0;
+  }
+
+  .rodape__assinatura{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5em;
+    font-size: 10px;
+  }
+
+  

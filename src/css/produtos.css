@@ -1,150 +1,235 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+  --cor-primaria: rgb(23, 23, 23);
+  --cor-secundaria:  #f1c40f;
+  --background: rgb(244, 244, 244);
+
+  --fonte-principal: "Bebas Neue", sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
-
 body {
-    font-family: 'Open Sans';
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-
-.responsivo-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  font-family: var(--fonte-principal);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  background-color: var(--background);
 }
   
-  header .Logotipo {
-    position: absolute;
-    top: 0;
-    left : 30px;
-    width: 130px;
-  }
-  
-  header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.75);
-  }
-  
-  
-  header ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-    padding-top: 10px;
-    padding-inline: 200px;
-    font-size: 25px;
-    font-family: "Bebas Neue", sans-serif;
-  }
-  
-  a {
-    padding: 10px 20px;
-    text-decoration: none;
-    color: white;
-    transition: all 0.2s ease; /* Transição para suavizar o hover */
-  }
-
-  header a:hover {
-    text-decoration: underline;
-    text-underline-offset: 15px;
-    color: #f1c40f; /* Destaque ao passar o mouse */
-  }
-  
-  .instagram{
-    width: 30px;
-    height: 30px;
-  }
-
-  nav ul .separador {
-    width: 1px;       /* largura da coluna */
-    height: 20px;     /* altura da coluna */
-    background-color: white; /* ou outra cor que combine */
-    opacity: 0.5;     /* opcional: deixa mais suave */
-  }
-
-  .background__barbearia {
-    position: relative;
-    background-image: url(/src/assets/barbeariaBackground.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: x-large;
-    font-family: "Bebas Neue", sans-serif;
+header .Logotipo {
+  position: absolute;
+  top: 0;
+  left : 30px;
+  width: 130px;
 }
-
-
-/* O overlay escuro */
-.background__barbearia::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* preto com 30% de transparência */
-    z-index: 1;
-}
-
-.background__barbearia > * {
-    position: relative;
-    z-index: 2;
-    color: #fff8ff;
-    padding: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-}
-
-.background__barbearia > div {
-  max-width: 800px;
-  padding-top: 100px; 
-}
-
-.frase__principal{
-  width: 500px;
-  font-size: 19px;
-}
-
-.pagina__branca {
+  
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  min-height: 100vh;
-  background-color: #fff8ff;
-  padding-top: 50px; /* ou o que for necessário */
+  z-index: 10;
+  padding: 40px;
+  background-color: var(--cor-primaria);
+}
+  
+  
+header ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  padding-top: 10px;
+  padding-inline: 200px;
+  font-size: 25px;
+  font-family: var(--fonte-principal);
+}
+  
+.nav__elementos{
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease; /* Transição para suavizar o hover */
 }
 
+header a:hover {
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  color: #f1c40f; /* Destaque ao passar o mouse */
+}
+  
+.instagram{
+  width: 30px;
+  height: 30px;
+}
+
+nav ul .separador {
+  width: 1px;       /* largura da coluna */
+  height: 20px;     /* altura da coluna */
+  background-color: white; /* ou outra cor que combine */
+  opacity: 0.5;     /* opcional: deixa mais suave */
+}
+
+.conteudo{
+  margin-top: 130px;
+}
+
+.titulo{
+  margin-top: 3.5em;
+  font-family: var(--fonte-principal);
+  font-size: 48px;
+  text-align: center;
+}
+
+.produto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 350px;
+}
+
+
+.img__pomada{
+  width: 300px;
+  height:350px;
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(242, 182, 18, 0.9);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-family: var(--fonte-secundaria);
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.produto:hover .overlay {
+  opacity: 1;
+}
+
+.cards__imagens {
+  margin: 1em 10em 5em;
+  display: flex;
+  gap: 35px 0;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 0 20px;
+  width: 350px;
+  height: 460px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.conteudo__texto{
+  text-decoration: none;
+  color: inherit;
+}
+
+.imagens__descricao{
+  color: var(--cor-primaria);
+}
+.conteudo__texto h3{
+  color: rgb(47, 47, 47);
+}
+
+
+
+.conteudo__pomada{
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.pomada__escritos{
+  display: flex;
+  flex-direction: column;
+  margin-right: 15rem;
+  gap: 10px;
+}
+.imagem__coffe{
+  margin: 5rem 2rem 4rem 5rem ;
+}
+
+.imagem__coffe img{
+  width: 600px;
+  height: auto;
+}
+
+.conteudo__pomada__titulo h1{
+  font-family: var(--fonte-principal);
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+}
+
+.conteudo__pomada__titulo h2{
+  font-family: var(--fonte-principal);
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.conteudo__pomada__texto{
+  font-family: var(--fonte-secundaria);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.conteudo__po__texto{
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: var(--fonte-secundaria);
+}
+
+.pomada__texto__final{
+  text-align: center;
+  align-items: center;
+  margin-top: 32px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
 
 .botao__agendar {
+  margin-top: 10px;
   display: inline-block;
-  padding: 14px 32px;
-  font-family: 'Montserrat', sans-serif;
+  padding: 10px 25px;
+  font-family: var(--fonte-secundaria);
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
   background: linear-gradient(135deg, #f1c40f 0%, #e67e22 100%);
   border: none;
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
@@ -177,25 +262,137 @@ body {
   transform: translateY(1px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-.apresentacao{
-  margin: 5%;
+
+
+.cerveja__estrela{
   display: flex;
   align-items: center;
-  justify-content:center;
-}
-.apresentacao__conteudo {
-  width: 550px;
-  font-size: 25px;
-  font-family: "Bebas Neue", sans-serif;
 }
 
-.apresentacao__conteudo__titulo{
-  font-size: 45px;
+.estrela__texto{
+  margin: 0 18rem 0 4rem;
+  font-family: var(--fonte-principal);
+  font-size: 30px;
 }
 
-.img__esquerda{
-  width: 650px;
-  height: 675px;
-  margin-right: 50px;
+.slider {
+  width: 600px;
+  height: 722px;
 }
 
+.container-slider {
+  margin: 7rem 0 4rem 9rem;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.container-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}
+
+.slider {
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.on {
+  opacity: 1;
+}
+
+#prev-button, #next-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#prev-button img, #next-button img {
+  width: 100%;
+  height: 100%;
+}
+
+#prev-button {
+  transform: rotate(180deg);
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(23, 23, 23);
+    color: #fff;
+    padding: 20px 0;
+    font-family: var(--fonte-secundaria);
+    font-size: 15px;
+  }
+
+.rodape__informacoes__esquerda{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: var(--fonte-secundaria);
+  font-size: 10px;
+  margin-bottom: 1.5%;
+  
+}
+
+  .rodape__logotipo{
+    width: 150px;
+    height: 150px;
+  }
+  
+  .rodape__informacoes__direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10em;
+  }
+
+  .redes-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+  }
+
+.instagram, .facebook{
+    width: 30px;
+    height: 30px;
+  }
+
+  .whatsapp{
+    width: 25px;
+    height: 25px;
+  }
+
+  .phone{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  .telefone{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+    margin: 0.5em 2.5em 0 0;
+  }
+
+  .rodape__assinatura{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5em;
+    font-size: 10px;
+  }
