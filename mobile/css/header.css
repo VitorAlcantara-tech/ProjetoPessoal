@@ -1,9 +1,11 @@
 .cabecalho{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px 20px;
     background-color: var(--cor-principal);
-    position: relative;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
 }
 
 .cabecalho__menu {
@@ -35,7 +37,7 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 55vw;
+    width: 100vw;
     z-index: 3;
 }
 
@@ -62,6 +64,7 @@
 .logotipo{
     width: 50px;
     height: 50px;
+    padding: 0 1.5em;
 }
 
 .redes-sociais{
@@ -76,7 +79,7 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 30vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
