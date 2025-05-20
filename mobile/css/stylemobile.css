@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(/mobile/css/header.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-de-fundo: #9e9e9e;
+    --cor-principal: #16191d;
+    --cor-secundaria:  #f1c40f;
+
+    --fonte-principal: "Bebas Neue", sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}
+

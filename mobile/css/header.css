@@ -1,0 +1,102 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--cor-principal);
+    position: relative;
+}
+
+.cabecalho__menu {
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/menu-brancoo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem{
+    padding-right: 0.5em;
+}
+
+.container__botao{
+    display: none;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 55vw;
+    z-index: 3;
+}
+
+.lista-menu__item{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--cor-principal);
+}
+    
+.lista-menu__link{
+    background: white;
+    background-clip: text; /* Para aparecer a cor do background somente onde tem texto */
+    font-family: var(--fonte-principal);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
+.logotipo{
+    width: 50px;
+    height: 50px;
+}
+
+.redes-sociais{
+    width: 30px;
+    height: 30px;
+}
+
+.background__barbearia {
+    position: relative;
+    background-image: url(/src/assets/barbeariaBackground.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+    font-family: var(--fonte-principal);
+}
+
+.background__barbearia::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* preto com 30% de transparência */
+    z-index: 1;
+}
+
+.logotipo__central{
+    margin-top: 1em;
+    width: 250px;
+    height: 250px;
+    z-index: 2;
+}

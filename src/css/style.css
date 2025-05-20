@@ -3,6 +3,7 @@
 :root{
   --cor-primaria: rgb(23, 23, 23);
   --cor-secundaria:  #f1c40f;
+  --cor-background-clara: #ededed;
 
   --fonte-principal: "Bebas Neue", sans-serif;
   --fonte-secundaria: 'Montserrat', sans-serif;
@@ -17,7 +18,6 @@
 html, body {
   overflow-x: hidden;
 }
-
 
 body {
     margin: 0;
@@ -51,7 +51,7 @@ body {
     align-items: center;
     padding-top: 10px;
     padding-inline: 200px;
-    font-size: 25px;
+    font-size: 1.56rem;
     font-family: var(--fonte-principal);
   }
   
@@ -81,9 +81,14 @@ body {
     z-index: 1; 
 }
   
-  .instagram, .facebook{
+  .instagram{
     width: 30px;
     height: 30px;
+    transition: 0.2s;
+  }
+
+  .instagram:hover, .whatsapp:hover, .facebook:hover, .phone:hover{
+      transform: scale(1.075);
   }
 
   nav ul .separador {
@@ -105,7 +110,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: x-large;
+    font-size: 2rem;
     font-family: var(--fonte-principal);
     
 }
@@ -141,14 +146,14 @@ body {
 
 .frase__principal{
   width: 500px;
-  font-size: 19px;
+  font-size: 1.2rem;
 }
 
 .botao__agendar {
   display: inline-block;
   padding: 14px 32px;
   font-family: var(--fonte-secundaria);
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
@@ -190,29 +195,29 @@ body {
 
 .pagina__branca {
   width: 100%;
-  min-height: 100vh;
-  background-color: #fff8ff;
-  padding-top: 50px; /* ou o que for necessário */
+  height: 100vh;
+  background-color: var(--cor-background-clara);
+  padding-top: 25px; /* ou o que for necessário */
 }
 .apresentacao{
-  margin: 5%;
+  margin: 50px 0;
   display: flex;
   align-items: center;
   justify-content:center;
 }
 .apresentacao__conteudo {
   width: 550px;
-  font-size: 25px;
+  font-size: 1.56rem;
   font-family: var(--fonte-principal);
 }
 
 .apresentacao__conteudo__titulo{
-  font-size: 45px;
+  font-size: 2.8rem;
 }
 
 .img__esquerda{
-  width: 650px;
-  height: 675px;
+  width: 550px;
+  height: 575px;
   margin-right: 50px;
 }
 
@@ -284,20 +289,23 @@ body {
     justify-content: flex-end;
   }
 
-.instagram, .facebook{
+.facebook{
     width: 30px;
     height: 30px;
+    transition: 0.2s;
   }
 
   .whatsapp{
     width: 25px;
     height: 25px;
+    transition: 0.2s;
   }
 
   .phone{
     width: 15px;
     height: 15px;
     margin-right: 10px;
+    transition: 0.2s;
   }
 
   .telefone{

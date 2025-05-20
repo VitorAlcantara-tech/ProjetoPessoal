@@ -3,7 +3,7 @@
 :root{
   --cor-primaria: rgb(23, 23, 23);
   --cor-secundaria:  #f1c40f;
-  --background: rgb(244, 244, 244);
+  --background: #ededed;
 
   --fonte-principal: "Bebas Neue", sans-serif;
   --fonte-secundaria: 'Montserrat', sans-serif;
@@ -48,7 +48,7 @@ header ul {
   align-items: center;
   padding-top: 10px;
   padding-inline: 200px;
-  font-size: 25px;
+  font-size: 1.56rem;
   font-family: var(--fonte-principal);
 }
   
@@ -66,9 +66,14 @@ header a:hover {
 }
   
 .instagram{
-  width: 30px;
-  height: 30px;
-}
+    width: 30px;
+    height: 30px;
+    transition: 0.2s;
+  }
+
+  .instagram:hover, .facebook:hover, .whatsapp:hover, .phone:hover{
+      transform: scale(1.075);
+  }
 
 nav ul .separador {
   width: 1px;       /* largura da coluna */
@@ -84,7 +89,7 @@ nav ul .separador {
 .titulo{
   margin-top: 3em;
   font-family: var(--fonte-principal);
-  font-size: 55px;
+  font-size: 3.4rem;
   text-align: center;
 }
 
@@ -96,7 +101,6 @@ nav ul .separador {
   width: 300px;
   height: 350px;
 }
-
 
 .img__pomada{
   width: 300px;
@@ -116,7 +120,7 @@ nav ul .separador {
   text-align: center;
   padding: 15px 0;
   font-family: var(--fonte-secundaria);
-  font-size: 18px;
+  font-size: 1.1rem;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -126,7 +130,7 @@ nav ul .separador {
 }
 
 .cards__imagens {
-  margin: 1em 10em 5em;
+  margin: 1em 1em 5em;
   display: flex;
   gap: 35px 0;
   justify-content: center;
@@ -223,7 +227,7 @@ nav ul .separador {
   display: inline-block;
   padding: 10px 25px;
   font-family: var(--fonte-secundaria);
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
@@ -272,12 +276,12 @@ nav ul .separador {
 .estrela__texto{
   margin: 0 18rem 0 4rem;
   font-family: var(--fonte-principal);
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 
 .slider {
-  width: 600px;
-  height: 722px;
+  width: 550px;
+  height: 672px;
 }
 
 .container-slider {
@@ -330,7 +334,7 @@ nav ul .separador {
 .rodape {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(23, 23, 23);
+    background-color: var(--cor-primaria);
     color: #fff;
     padding: 20px 0;
     font-family: var(--fonte-secundaria);
@@ -395,20 +399,23 @@ nav ul .separador {
     justify-content: space-between;
   }
 
-.instagram, .facebook{
+.facebook{
     width: 30px;
     height: 30px;
+    transition: 0.2s;
   }
 
   .whatsapp{
     width: 25px;
     height: 25px;
+    transition: 0.2s;
   }
 
   .phone{
     width: 15px;
     height: 15px;
     margin-right: 10px;
+    transition: 0.2s;
   }
 
   .telefone{
