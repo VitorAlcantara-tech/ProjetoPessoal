@@ -48,7 +48,7 @@ header ul {
   align-items: center;
   padding-top: 10px;
   padding-inline: 200px;
-  font-size: 1.56rem;
+  font-size: 1.6rem;
   font-family: var(--fonte-principal);
 }
   
@@ -375,15 +375,21 @@ main{
     justify-content: flex-end;
   }
 
-.instagram{
-    width: 30px;
-    height: 30px;
-    transition: 0.2s;
-  }
+.instagram__cabecalho{
+      width: 40px;
+      height: 40px;
+      transition: 0.2s;
+    }
 
-  .instagram:hover, .facebook:hover, .whatsapp:hover, .phone:hover{
-      transform: scale(1.075);
-  }
+    .instagram{
+      width: 30px;
+      height: 30px;
+      transition: 0.2s;
+    }
+
+     .instagram__cabecalho:hover, .instagram:hover, .whatsapp:hover, .facebook:hover, .phone:hover{
+        transform: scale(1.075);
+    }
 
 .facebook{
     width: 30px;

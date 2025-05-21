@@ -1,46 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-  --cor-primaria: rgb(23, 23, 23);
-  --cor-secundaria:  #f1c40f;
-  --cor-background-clara: #ededed;
 
-  --fonte-principal: "Bebas Neue", sans-serif;
-  --fonte-secundaria: 'Montserrat', sans-serif;
-}
+@media screen and (min-width: 1038px){
+  :root{
+    --cor-primaria: rgb(23, 23, 23);
+    --cor-secundaria:  #f1c40f;
+    --cor-background-clara: #ededed;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    --fonte-principal: "Bebas Neue", sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+  }
 
-html, body {
-  overflow-x: hidden;
-}
-
-body {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
     
-.cabecalho .Logotipo {
-    position: absolute;
-    top: 0;
-    left : 30px;
-    width: 130px;
-}
+  .cabecalho .Logotipo {
+      position: absolute;
+      top: 0;
+      left : 30px;
+      width: 130px;
+    }
     
-.cabecalho {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.85);
-}
+  .cabecalho {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
     
   .cabecalho ul {
       display: flex;
@@ -49,7 +52,7 @@ body {
       align-items: center;
       padding-top: 10px;
       padding-inline: 200px;
-      font-size: 1.6rem;;
+      font-size: 1.56rem;
       font-family: var(--fonte-principal);
     }
     
@@ -79,19 +82,13 @@ body {
       z-index: 1; 
   }
     
-    .instagram__cabecalho{
-      width: 40px;
-      height: 40px;
-      transition: 0.2s;
-    }
-
     .instagram{
       width: 30px;
       height: 30px;
       transition: 0.2s;
     }
 
-     .instagram__cabecalho:hover, .instagram:hover, .whatsapp:hover, .facebook:hover, .phone:hover{
+    .instagram:hover, .whatsapp:hover, .facebook:hover, .phone:hover{
         transform: scale(1.075);
     }
 
@@ -114,8 +111,9 @@ body {
       align-items: center;
       justify-content: center;
       text-align: center;
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-family: var(--fonte-principal);
+      
   }
 
   .titulo{
@@ -148,9 +146,8 @@ body {
   }
 
   .frase__principal{
-    width: 650px;
-    font-size: 1.3rem;
-    margin-bottom: 2em;
+    width: 500px;
+    font-size: 1.2rem;
   }
 
   .botao__agendar {
@@ -202,8 +199,6 @@ body {
     height: 100vh;
     background-color: var(--cor-background-clara);
     padding-top: 25px; /* ou o que for necessário */
-    display: flex;
-    justify-content: center;
   }
   .apresentacao{
     margin: 50px 0;
@@ -212,7 +207,7 @@ body {
     justify-content:center;
   }
   .apresentacao__conteudo {
-    width: 600px;
+    width: 550px;
     font-size: 1.56rem;
     font-family: var(--fonte-principal);
   }
@@ -223,9 +218,8 @@ body {
 
   .img__esquerda{
     width: 550px;
-    height: auto;
+    height: 575px;
     margin-right: 50px;
-    border-radius: 5px;
   }
 
   .rodape {
@@ -329,15 +323,120 @@ body {
       margin-top: 5em;
       font-size: 10px;
     }
-
-@media screen and (max-width: 765px){
-  /* CABEÇALHO */
-  .cabecalho ul{
-    display: none;
-  }
-
-  .cabecalho .Logotipo {
-    position: absolute;
-    width: 50px;
+    
+    .cabecalho__mobile{
+        display: none;
+    }
 }
+
+@media screen and (max-width: 1038px) {
+    .cabecalho{
+        display: none;
+    }
+    .cabecalho__mobile{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+        background-color: var(--cor-principal);
+        position: fixed;
+        width: 100vw;
+        z-index: 1000;
+    }
+
+    .cabecalho__menu__mobile {
+        width: 50px;
+        height: 50px;
+        background-image: url("../assets/menu-brancoo.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+
+    .container__mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    .container__imagem__mobile{
+        padding-right: 0.5em;
+    }
+
+    .container__botao__mobile{
+        display: none;
+    }
+
+    .lista-menu__mobile{
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100vw;
+        z-index: 3;
+    }
+
+    .lista-menu__item__mobile{
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        background-color: var(--cor-principal);
+    }
+        
+    .lista-menu__link__mobile{
+        background: white;
+        background-clip: text; /* Para aparecer a cor do background somente onde tem texto */
+        font-family: var(--fonte-principal);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 18px
+    }
+
+    .container__botao__mobile:checked~.lista-menu__mobile{
+        display: block;
+    }
+
+    .logotipo__mobile{
+        width: 50px;
+        height: 50px;
+        padding: 0 1.5em;
+    }
+
+    .redes-sociais__mobile{
+        width: 30px;
+        height: 30px;
+    }
+
+    .background__barbearia__mobile {
+        position: relative;
+        background-image: url(/src/assets/barbeariaBackground.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: x-large;
+        font-family: var(--fonte-principal);
+    }
+
+    .background__barbearia__mobile::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* preto com 30% de transparência */
+        z-index: 1;
+    }
+
+    .logotipo__central__mobile{
+        margin-top: 1em;
+        width: 250px;
+        height: 250px;
+        z-index: 2;
+    }
 }
+
+    

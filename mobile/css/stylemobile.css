@@ -15,6 +15,15 @@
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px; /* ajuste conforme a altura do seu header fixo */
+}
+
+
 body{
     background-color: var(--cor-de-fundo);
     
@@ -25,54 +34,54 @@ main{
     flex-direction: column;
     align-items: center;
 }
-.home{
+.home__mobile{
     margin: 0 3em 3em 3em;
 }
 
-.titulo__home{
+.titulo__home__mobile{
     text-align: center;
     font-size: 30px;
     font-family: var(--fonte-principal);
 }
 
-.texto__home{
+.texto__home__mobile{
     margin: 1em;
     font-family: helvetica;
     font-weight: 500;
     color: var(--cor-principal);
 }
 
-.tesoura__centro{
+.tesoura__centro__mobile{
   text-align: center;
 }
-.tesoura{
+.tesoura__mobile{
   width: 100px;
   height: 100px;
 }
 
-.imagem__supreme{
+.imagem__supreme__mobile{
     text-align: center;
     padding: 30px 0px;
     background-color: var(--cor-de-fundo);
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
-.imagem__supreme img{
+.imagem__supreme__mobile img{
     width: 230px;
     height: 310px;
 }
 
-.pagina__servicos{
+.pagina__servicos__mobile{
     width: 100%;
     background-color: var(--cor-principal);
 }
 
-.titulo__servicos{
+.titulo__servicos__mobile{
     letter-spacing: 1.5px;
     color: var(--cor-de-fundo);
     margin-top: 1em;
 }
 
-.cards__imagens {
+.cards__imagens__mobile {
   margin: 1em;
   display: flex;
   flex-direction: column;
@@ -80,17 +89,17 @@ main{
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 1em;
+  
 }
 
-.corte, .barba, .cortemaisbarba{
+.corte__mobile, .barba__mobile, .cortemaisbarba__mobile{
   width: 280px;
   height: 330px;
   border-radius:1px;
-  margin-top: 1rem;
+
 }
 
-.box {
+.box__mobile {
   border-radius: 2px;
   margin: 0 5em 17em ;
   width: 320px;
@@ -98,11 +107,11 @@ main{
   transition: transform 0.3s ease;
 }
   
-.box:hover {
+.box__mobile:hover {
   transform: translateY(-5px);
 }
 
-.imagens__descricao{
+.imagens__descricao__mobile{
     color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
     padding: 20px;
@@ -110,15 +119,15 @@ main{
     margin-bottom: 1em;
 }
 
-.imagens__descricao h2{
+.imagens__descricao__mobile h2{
     letter-spacing: 1.5px;
     margin-bottom: 1em;
 }
-.imagens__descricao h3{
+.imagens__descricao__mobile h3{
     font-weight: 400;
 }
 
-.imagens__descricao p{
+.imagens__descricao__mobile p{
     font-size: 1rem;
     font-family: var(--fonte-secundaria);
     word-spacing: 0.5px;
@@ -126,7 +135,7 @@ main{
     margin-bottom: 0.5em;
 }
 
-.botao__agendar a {
+.botao__agendar__mobile a {
     font-family: var(--fonte-secundaria);
     font-weight: 500;
     text-decoration: none;
@@ -134,52 +143,55 @@ main{
     padding: 12px 30px;
     border: 2px solid var(--cor-secundaria);
     border-radius: 1px;
-    margin-bottom: 1em;
 }
 
 
-.pagina__profissionais{
+.pagina__profissionais__mobile{
     width: 100%;
     background-color: var(--cor-de-fundo);
 }
-.titulo__profissionais{
+.titulo__profissionais__mobile{
     margin: 1em;
 }
 
-.imagens__profissionais{
+.imagens__profissionais__mobile{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
 
-.fotos{
+.fotos__mobile{
     width: 300px;
     height: auto;
     border-radius: 5px;
 }
 
-.descricao__matheus, .descricao__gabriel{
+.descricao__matheus__mobile, .descricao__gabriel__mobile{
     color: var(--cor-principal);
     padding: 10px 70px;
     text-align: left;
     margin-bottom: 1em;
 }
 
-.descricao__matheus h2, .descricao__gabriel h2{
+.descricao__matheus__mobile h2, .descricao__gabriel__mobile h2{
     font-family: var(--fonte-principal);
     letter-spacing: 1.5px;
     margin-bottom: 1em;
     color: var(--cor-secundaria);
     text-shadow: 2px 4px 50px rgba(0,0,0,0.3);
 }
-.descricao__matheus p, .descricao__gabriel p{
+.descricao__matheus__mobile p, .descricao__gabriel__mobile p{
     font-weight: 600;
     font-size: 0.8rem;
     font-family: var(--fonte-secundaria);
 }
 
-.botao__agendar__profissionais {
+.botao__matheus__mobile{
+  margin-bottom: 3em;
+}
+
+.botao__agendar__profissionais__mobile {
   display: inline-block;
   padding: 10px 60px;
   font-family: var(--fonte-principal);
@@ -192,26 +204,25 @@ main{
   border-radius: 5px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  margin-bottom: 1em;
 }
 
-.pagina__unidade{
+.pagina__unidade__mobile{
     width: 100%;
     background-color: var(--cor-de-fundo);
 }
 
-.titulo__unidade{
+.titulo__unidade__mobile{
     margin-top: 1em;
 }
 
-.imagens__nossaunidade{
+.imagens__nossaunidade__mobile{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 1em;
 }
 
-.imagens__terciaria{
+.imagens__terciaria__mobile{
     display:flex;
     border-radius: 10px;
     margin: 0em 0.2em;
@@ -219,7 +230,7 @@ main{
     height: 180px;
 }
 
-.unidade-box {
+.unidade-box__mobile {
   border: 1px solid #000000;
   padding: 20px;
   margin: 3em auto;
@@ -229,7 +240,7 @@ main{
   font-family: var(--fonte-secundaria);
 }
 
-.unidade-nome {
+.unidade-nome__mobile {
   color: var(--cor-secundaria);
   font-size: 1.73rem;
   font-weight: bold;
@@ -237,32 +248,32 @@ main{
   text-shadow: 1px 4px 80px rgba(0,0,0,0.6);
 }
 
-.linha-divisoria {
+.linha-divisoria__mobile {
   border-top: 1px solid #000000;
   margin: 0 0 1em;
   width: 100%;
 }
 
-.unidade-endereco {
+.unidade-endereco__mobile {
   font-size: 16px;
   color: var(--cor-principal);
   line-height: 1.6;
 }
 
-.unidade-img {
+.unidade-img__mobile {
   width: 300px;
   height: auto;
   margin: 10px 0;
   border-radius: 5px;
 }
 
-.unidade-horario {
+.unidade-horario__mobile {
   font-size: 16px;
   color: var(--cor-principal);
   margin: 15px 0;
 }
 
-.botao-mapa {
+.botao-mapa__mobile {
   display: inline-block;
   padding: 10px 20px;
   border: 2px solid black;
@@ -272,36 +283,52 @@ main{
   font-size: 16px;
 }
 
-.botao-mapa:hover {
+.botao-mapa:hover__mobile {
   background-color: black;
   color: white;
 }
 
-.pagina__produtos{
+.pagina__produtos__mobile{
   width: 100%;
   background-color: var(--cor-principal);
 }
 
-.titulo__produtos{
+.titulo__produtos__mobile{
   color:var(--cor-de-fundo);
   margin: 1em 0 0.5em;
 }
 
-.imagem__produtos{
+.imagem__produtos__mobile{
   display: flex;
   justify-content: center;
 }
 
-.imagem__produtos img{
+.imagem__produtos__mobile img{
   border-radius: 5px;
   width: 90%;
   height: auto;
 }
 
-.botao__produtos{
+.produtos__texto__mobile{
+  font-family: var(--fonte-secundaria);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 2em;
+  color: var(--cor-de-fundo);
+}
+
+.div__botao__produtos__mobile{
   display: flex;
   justify-content: center;
-  padding: 10px 60px;
+  text-align: center;
+}
+
+.botao__produtos__mobile{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  padding: 10px 65px;
   font-family: var(--fonte-principal);
   letter-spacing: 1px;
   font-size: 1.3rem;
@@ -312,4 +339,15 @@ main{
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   margin-bottom: 1em;
+}
+
+.rodape__mobile{
+  display: flex;
+  font-family: var(--fonte-secundaria);
+  background-color: var(--cor-de-fundo);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--cor-principal);
+  padding: 1em;
+  justify-content: center;
 }

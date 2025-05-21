@@ -44,7 +44,7 @@ header ul {
   align-items: center;
   padding-top: 10px;
   padding-inline: 200px;
-  font-size: 1.56rem;
+  font-size: 1.6rem;
   font-family: var(--fonte-principal);
 }
   
@@ -75,11 +75,12 @@ nav ul .separador {
 
 .mapa__container{
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .mapa {
   border-radius: 10px;
-  margin: 2rem 3rem 3rem 6rem;
+  margin: 2rem 3rem 3rem 0rem;
 }
 
 .icone{
@@ -247,15 +248,21 @@ nav ul .separador {
     justify-content: flex-end;
   }
 
-.instagram{
-    width: 30px;
-    height: 30px;
-    transition: 0.2s;
-  }
+.instagram__cabecalho{
+      width: 40px;
+      height: 40px;
+      transition: 0.2s;
+    }
 
-.instagram:hover, .whatsapp:hover, .facebook:hover, .phone:hover{
-   transform: scale(1.075);
-}
+    .instagram{
+      width: 30px;
+      height: 30px;
+      transition: 0.2s;
+    }
+
+     .instagram__cabecalho:hover, .instagram:hover, .whatsapp:hover, .facebook:hover, .phone:hover{
+        transform: scale(1.075);
+    }
 
 .facebook{
     width: 30px;

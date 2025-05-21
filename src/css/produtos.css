@@ -48,7 +48,7 @@ header ul {
   align-items: center;
   padding-top: 10px;
   padding-inline: 200px;
-  font-size: 1.56rem;
+  font-size: 1.6rem;
   font-family: var(--fonte-principal);
 }
   
@@ -65,15 +65,21 @@ header a:hover {
   color: #f1c40f; /* Destaque ao passar o mouse */
 }
   
-.instagram{
-    width: 30px;
-    height: 30px;
-    transition: 0.2s;
-  }
+.instagram__cabecalho{
+      width: 40px;
+      height: 40px;
+      transition: 0.2s;
+    }
 
-  .instagram:hover, .facebook:hover, .whatsapp:hover, .phone:hover{
-      transform: scale(1.075);
-  }
+    .instagram{
+      width: 30px;
+      height: 30px;
+      transition: 0.2s;
+    }
+
+     .instagram__cabecalho:hover, .instagram:hover, .whatsapp:hover, .facebook:hover, .phone:hover{
+        transform: scale(1.075);
+    }
 
 nav ul .separador {
   width: 1px;       /* largura da coluna */
@@ -140,6 +146,7 @@ nav ul .separador {
 }
 
 .box {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   align-items: center;
