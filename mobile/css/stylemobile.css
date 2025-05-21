@@ -270,10 +270,46 @@ main{
   color: black;
   font-weight: bold;
   font-size: 16px;
-  transition: 0.3s ease;
 }
 
 .botao-mapa:hover {
   background-color: black;
   color: white;
+}
+
+.pagina__produtos{
+  width: 100%;
+  background-color: var(--cor-principal);
+}
+
+.titulo__produtos{
+  color:var(--cor-de-fundo);
+  margin: 1em 0 0.5em;
+}
+
+.imagem__produtos{
+  display: flex;
+  justify-content: center;
+}
+
+.imagem__produtos img{
+  border-radius: 5px;
+  width: 90%;
+  height: auto;
+}
+
+.botao__produtos{
+  display: flex;
+  justify-content: center;
+  padding: 10px 60px;
+  font-family: var(--fonte-principal);
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  border: 1px solid var(--cor-de-fundo);
+  color: var(--cor-de-fundo);
+  border-radius: 5px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  margin-bottom: 1em;
 }
