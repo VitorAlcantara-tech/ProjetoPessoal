@@ -17,6 +17,7 @@
 
 html, body {
   overflow-x: hidden;
+  background-color: #e67e22;
 }
 
 body {
@@ -101,6 +102,101 @@ body {
       background-color: white; /* ou outra cor que combine */
       opacity: 0.5;     /* opcional: deixa mais suave */
     }
+  /* CABECALHO MOBILE */
+
+  .cabecalho__mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #16191d;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.redes-sociais__mobile{
+  width: 35px;
+  height: 35px;
+}
+
+.logotipo__mobile{
+    width: 65px;
+    height: auto;
+}
+
+.esquerda{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+    /* ESTILO MENU MOBILE */
+  .menu-branco{
+    width: 70px;
+    height: auto;
+    z-index: 1000;
+  }
+
+  .menu__mobile {
+  background-color: #16191d;
+  width: 100vw;
+  max-height: 0;
+  position: fixed;
+  top: 5.5rem;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  display: block;
+  
+}
+
+.menu__mobile.abrir__menu {
+  max-height: 500px; /* valor suficiente para conter todos os itens do menu */
+  overflow-y: auto;
+}
+
+.menu__mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.menu__mobile li {
+  margin: 20px 0;
+}
+
+.menu__mobile a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--fonte-principal);
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  padding-left: 0px;
+}
+
+
+  .menu__mobile.abrir__menu ~ .overlay__menu{
+    display: block;
+  }
+
+
+  .overlay__menu{
+    background-color: #000000a5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: 888;
+    display: none;
+}
+
+
+
 
     .background__barbearia {
       position: relative;
@@ -332,12 +428,7 @@ body {
 
 @media screen and (max-width: 765px){
   /* CABEÇALHO */
-  .cabecalho ul{
+  .cabecalho {
     display: none;
   }
-
-  .cabecalho .Logotipo {
-    position: absolute;
-    width: 50px;
-}
 }

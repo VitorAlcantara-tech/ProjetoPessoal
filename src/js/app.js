@@ -1,37 +1,20 @@
+// Botão Menu Mobile
+document.addEventListener('DOMContentLoaded', () => {
+  const btnMenu = document.getElementById('btn__menu');
+  const menu = document.getElementById('menu__mobile');
+  const sairOverlay = document.getElementById('overlay__menu')
 
-const slider = document.querySelectorAll('.slider');
-const btnPrev = document.getElementById('prev-button');
-const btnNext = document.getElementById('next-button');
+    btnMenu.addEventListener('click', () => {
+      menu.classList.toggle('abrir__menu');
+    });
 
-let currentSlide = 0;
+    menu.addEventListener('click', ()=>{
+      menu.classList.remove('abrir__menu');
+    })
 
-function hideSlider() {
-  slider.forEach(item => item.classList.remove('on'))
-}
-
-function showSlider() {
-  slider[currentSlide].classList.add('on')
-}
-
-function nextSlider() {
-  hideSlider()
-  if(currentSlide === slider.length -1) {
-    currentSlide = 0
-  } else {
-    currentSlide++
+    sairOverlay.addEventListener('click', ()=>{
+      menu.classList.remove('abrir__menu');
+    })
   }
-  showSlider()
-}
+);
 
-function prevSlider() {
-  hideSlider()
-  if(currentSlide === 0) {
-    currentSlide = slider.length -1
-  } else {
-    currentSlide--
-  }
-  showSlider()
-}
-
-btnNext.addEventListener('click', nextSlider)
-btnPrev.addEventListener('click', prevSlider)
