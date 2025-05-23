@@ -178,8 +178,7 @@ body {
   padding-left: 0px;
 }
 
-
-  .menu__mobile.abrir__menu ~ .overlay__menu{
+.menu__mobile.abrir__menu ~ .overlay__menu{
     display: block;
   }
 
