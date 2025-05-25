@@ -3,7 +3,7 @@
 :root{
   --cor-primaria: rgb(23, 23, 23);
   --cor-secundaria:  #f1c40f;
-  --cor-background-clara: #ededed;
+  --cor-background-clara: #d4d4d4;
 
   --fonte-principal: "Bebas Neue", sans-serif;
   --fonte-secundaria: 'Montserrat', sans-serif;
@@ -17,7 +17,7 @@
 
 html, body {
   overflow-x: hidden;
-  background-color: #e67e22;
+  background-color: var(--cor-background-clara);
 }
 
 body {
@@ -68,16 +68,7 @@ body {
     }
 
   .cabecalho::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.1);
-      transform: skewX(-25deg);
-      transition: left 0.75s;
-      z-index: 1; 
+    display: none;
   }
     
     .instagram__cabecalho{
@@ -152,7 +143,7 @@ body {
 }
 
 .menu__mobile.abrir__menu {
-  max-height: 500px; /* valor suficiente para conter todos os itens do menu */
+  max-height: 500px;
   overflow-y: auto;
 }
 
@@ -178,25 +169,153 @@ body {
   padding-left: 0px;
 }
 
-.menu__mobile.abrir__menu ~ .overlay__menu{
-    display: block;
+.menu__mobile.abrir__menu ~ .overlay__menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+  .overlay__menu {
+  background-color: #000000d1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  z-index: 888;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+
+  /* MAIN MOBILE */
+  .logotipo__central__mobile{
+    margin-top: 1.7em;
+    width: 250px;
+    height: 250px;
+    z-index: 2;
+    display: none;
   }
 
+  .tesoura__centro__mobile{
+  text-align: center;
+  display: none;
+  }
+  .tesoura__mobile{
+    width: 100px;
+    height: 100px;
+  }
 
-  .overlay__menu{
-    background-color: #000000d1;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 90px;
-    left: 0;
-    z-index: 888;
+  .titulo__home__mobile{
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--fonte-principal);
     display: none;
+}
+
+.texto__home__mobile{
+    margin: 1em 3em 3em 3em;
+    font-family: helvetica;
+    font-weight: 500;
+    color: var(--cor-principal);
+    display: none;
+}
+
+.imagem__supreme__mobile{
+    display: none;
+    margin: 3rem 3rem 0 3rem;
+    text-align: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: var(--cor-de-fundo);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.imagem__supreme__mobile img{
+    width: 230px;
+    height: 310px;
+}
+
+.pagina__servicos__mobile{
+    width: 100%;
+    background-color: var(--cor-primaria);
+}
+
+.titulo__servicos__mobile{
+    letter-spacing: 1.5px;
+    color: var(--cor-de-fundo);
+    margin-top: 1em;
+}
+
+.cards__imagens__mobile {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.corte__mobile, .barba__mobile, .cortemaisbarba__mobile{
+  width: 280px;
+  height: 330px;
+  border-radius:1px;
+
+}
+
+.box__mobile {
+  border-radius: 2px;
+  margin: 0 5em 17em ;
+  width: 320px;
+  height: 450px;
+  transition: transform 0.3s ease;
+}
+  
+.box__mobile:hover {
+  transform: translateY(-5px);
+}
+
+.imagens__descricao__mobile{
+    color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.imagens__descricao__mobile h2{
+    letter-spacing: 1.5px;
+    margin-bottom: 1em;
+}
+.imagens__descricao__mobile h3{
+    font-weight: 400;
+}
+
+.imagens__descricao__mobile p{
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    word-spacing: 0.5px;
+    letter-spacing: normal;
+    margin-bottom: 0.5em;
+}
+
+.botao__agendar__mobile a {
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    padding: 12px 30px;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 1px;
 }
 
 
 
 
+    /* MAIN DESKTOP */
     .background__barbearia {
       position: relative;
       background-image: url(/src/assets/barbeariaBackground.png);
@@ -291,6 +410,8 @@ body {
     transform: translateY(1px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
+  
+
 
   .pagina__branca {
     width: 100%;
@@ -426,11 +547,30 @@ body {
     }
 
 @media screen and (max-width: 765px){
-  /* CABEÇALHO */
-  .cabecalho {
-    display: none;
+  
+  .cabecalho, #texto__background, .pagina__branca, 
+  footer.rodape {
+    display: none !important;
   }
   .cabecalho__mobile{
     display: flex;
+  }
+
+  .logotipo__central__mobile, .tesoura__centro__mobile, .titulo__home__mobile, .texto__home__mobile{
+    display: block;
+  }
+
+  .background__barbearia {
+      height: 40vh;
+      margin-top: 50px;
+      
+  }
+
+  .background__barbearia::before {
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .imagem__supreme__mobile, .imagem__supreme__mobile img{
+    display: block;
   }
 }

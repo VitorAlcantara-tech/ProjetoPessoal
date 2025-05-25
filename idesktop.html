@@ -51,8 +51,8 @@
             <ul>
               <li><a href="#" id="home">Home</a></li>
               <li><a href="src/pages/servicos.html" id="Serviços">Serviços</a></li>
-              <li><a href="src/pages/unidade.html" id="unidade">Nossa Unidade</a></li>
               <li><a href="src/pages/produtos.html" id="produtos">Produtos</a></li>
+              <li><a href="src/pages/unidade.html" id="unidade">Nossa Unidade</a></li>
             </ul>
           </nav>
       </div>
@@ -63,18 +63,105 @@
         </div>
           
     </header>
+    
+    
 
-    <!--MAIN DO DESKTOP -->
-      <main class="pagina__principal">
+    <!--MAIN DO DESKTOP E MOBILE-->
+      <main class="pagina__principal" id="pag">
         <div class="background__barbearia">
-          <div>
-            <h1 class="titulo">33 BARBER CREW</h1>
-            <div class="frase__principal">
+          <div id="texto__background">
+            <h1 class="titulo" id="titulo">33 BARBER CREW</h1>
+            <div class="frase__principal" id="frase__principal">
               💈Especializada em cortes e barbas com estilo. Venha nos conhecer e💈<br> aproveite nossa cortesia!
             </div>
             <a href="https://wa.me/5511954913978?text=Olá,%20gostaria%20de%20agendar%20um%20corte,%20por%20favor." class="botao__agendar">Agendar Agora</a>
           </div>
+
+          <!-- LOGOTIPO CENTRAL DO MOBILE -->
+          <main class="pag__mobile" id="main__mobile">
+            <img class="logotipo__central__mobile" src="/src/assets/Logotipo 33Barber-sem fundo.png" alt="33BarberLogo">
+          </main>
+          <!-- ACABA AQUI -->
         </div>
+
+        <!-- MAIN DO MOBILE -->
+        <section class="home__mobile" id="home">
+          <div class="tesoura__centro__mobile">
+                <img class="tesoura__mobile" src="/src/assets/tesouramaispontos.png" alt="">
+          </div>
+          <h2 class="titulo__home__mobile">33 Barber Crew</h2>
+           <p class="texto__home__mobile">Lorem ipsum dolor sit amet   consectetur adipisicing elit. Ea atque aliquam delectus
+                voluptatibus doloribus. Vero, sint error deleniti minima nihil debitis quia quisquam quae excepturi
+                consectetur quasi ducimus aliquid repellat minus! Facere, numquam alias eaque ducimus vitae earum, modi
+                asperiores incidunt, tenetur explicabo quos? Saepe quae quod animi doloremque minima cumque maxime,
+                veritatis error mollitia reiciendis maiores eius praesentium quaerat facilis magni deleniti quos vitae
+                consectetur sapiente est tempore. Officia consequuntur placeat vitae aperiam temporibus.</p>
+            <div class="imagem__supreme__mobile">
+                <img src="./src/assets/fotounidade6.jpg" alt="Foto barbearia">
+            </div>
+
+            <div class="tesoura__centro__mobile">
+                <img class="tesoura__mobile" src="/src/assets/tesouramaispontos.png" alt="">
+            </div>
+        </section>
+
+        <section class="pagina__servicos__mobile" id="servicos">
+            <div>
+                <h2 class="titulo__home__mobile titulo__servicos__mobile">Serviços</h2>
+            </div>
+
+            <div class="cards__imagens__mobile">
+                <div class="box__mobile">
+                    <img src="/src/assets/corte.jpg" alt="Corte" class="corte__mobile">
+                    <div class="imagens__descricao__mobile">
+                        <h2>Corte</h2>
+                        <div class="texto__imagens__mobile">
+                            <p>O corte da 33 Barber Crew é feito com precisão, estilo e personalidade. Trabalhamos com
+                                técnicas modernas e clássicas para oferecer um visual alinhado com o que você procura.
+                                Finalizamos com produtos de qualidade para garantir um acabamento impecável.</p>
+                        </div>
+                        <h3>R$ 55,00</h3>
+                    </div>
+                    <div class="botao__agendar__mobile">
+                        <a href="https://api.whatsapp.com/message/PYPVDIJFYBPZM1?autoload=1&app_absent=0">AGENDAR</a>
+                    </div>
+                </div>
+
+                <div class="box__mobile">
+                    <img src="/src/assets/barba.png" alt="Barba" class="barba__mobile">
+                    <div class="imagens__descricao__mobile">
+                        <h2>Barba</h2>
+                        <div class="texto__imagens__mobile">
+                            <p>Nossa barbearia oferece um cuidado especial com a barba. Do contorno à hidratação, o
+                                serviço inclui toalha quente, navalha ou máquina e finalização com produtos específicos.
+                                Uma experiência relaxante e estilosa.</p>
+                        </div>
+                        <h3>R$ 50,00</h3>
+                    </div>
+                    <div class="botao__agendar__mobile">
+                        <a href="https://api.whatsapp.com/message/PYPVDIJFYBPZM1?autoload=1&app_absent=0">AGENDAR</a>
+                    </div>
+                </div>
+
+                <div class="box__mobile">
+                    <img src="/src/assets/cortemaisbarba.png" alt="Corte + Barba" class="cortemaisbarba__mobile">
+                    <div class="imagens__descricao__mobile">
+                        <h2>Combo Corte + Barba</h2>
+                        <div class="texto__imagens__mobile">
+                            <p>O combo perfeito para quem quer praticidade e estilo em um único atendimento. Corte e
+                                barba feitos com atenção aos detalhes, respeitando seu estilo pessoal. Ideal para quem
+                                valoriza um visual completo.</p>
+                        </div>
+                        <h3>R$ 85, 00<h3>
+                    </div>
+                    <div class="botao__agendar__mobile">
+                        <a href="https://api.whatsapp.com/message/PYPVDIJFYBPZM1?autoload=1&app_absent=0">AGENDAR</a>
+                    </div>
+                </div>
+            </div>
+
+
+
       </main>
       <main class="pagina__branca" >
         <div class="apresentacao"> 
@@ -83,8 +170,10 @@
               <h1 class="apresentacao__conteudo__titulo">AQUI NA <br> 33 BARBER CREW</h1>
               Prezamos pelo atendimento e qualidade para que os clientes se sintam em casa. Oferecemos cortes de cabelo e barba com toalhas quentes, todos produtos de alta qualidade para sua barba e cabelo. A primeira cerveja é uma cortesia que oferecemos. Venha nos visitar para conhecer nosso espaço!
           </section>
+          
+    </main>
         </div>
-      </main>
+      
 
 
     <!--RODAPE DO DESKTOP -->
@@ -120,7 +209,7 @@
         </div>
         <p class="rodape__assinatura">Site desenvolvido por Vitor Alcântara</p>
       </div>
-
+    </footer>
       
 </body>
 
