@@ -4,6 +4,7 @@
   --cor-primaria: rgb(23, 23, 23);
   --cor-secundaria:  #f1c40f;
   --cor-background-clara: #d4d4d4;
+  --cinza-mobile: #16191d;
 
   --fonte-principal: "Bebas Neue", sans-serif;
   --fonte-secundaria: 'Montserrat', sans-serif;
@@ -129,7 +130,7 @@ body {
   }
 
   .menu__mobile {
-  background-color: #16191d;
+  background-color: var(--cinza-mobile);
   width: 100vw;
   max-height: 0;
   position: fixed;
@@ -226,26 +227,27 @@ body {
 .imagem__supreme__mobile{
     display: none;
     margin: 3rem 3rem 0 3rem;
-    text-align: center;
-    align-items: center;
     padding: 30px 0;
     background-color: var(--cor-de-fundo);
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
-.imagem__supreme__mobile img{
-    width: 230px;
-    height: 310px;
+.imagem__supreme__mobile img {
+  width: 230px;
+  height: 310px;
+  margin: 0 auto;  /* (opcional) centraliza horizontalmente */
 }
+
 
 .pagina__servicos__mobile{
     width: 100%;
-    background-color: var(--cor-primaria);
+    background-color: var(--cinza-mobile);
+    display: none ;
 }
 
 .titulo__servicos__mobile{
     letter-spacing: 1.5px;
-    color: var(--cor-de-fundo);
-    margin-top: 1em;
+    color: var(--cor-background-clara);
+    padding-top: 1em;
 }
 
 .cards__imagens__mobile {
@@ -279,7 +281,7 @@ body {
 }
 
 .imagens__descricao__mobile{
-    color: var(--cor-de-fundo);
+    color: var(--cor-background-clara);
     font-family: var(--fonte-principal);
     padding: 20px;
     text-align: left;
@@ -571,6 +573,10 @@ body {
   }
 
   .imagem__supreme__mobile, .imagem__supreme__mobile img{
+    display: block;
+  }
+
+  .pagina__servicos__mobile{
     display: block;
   }
 }
