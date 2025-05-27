@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+  --cor-primaria: rgb(23, 23, 23);
+  --cor-secundaria:  #f1c40f;
+  --cor-background-clara: #f1f1f1;
+  --cinza-mobile: #16191d;
+
+  --fonte-principal: "Bebas Neue", sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--cor-background-clara);
+    font-family: var(--fonte-principal);
+}
+
+main {
+  padding-top: 80px; /* ou ajuste conforme a altura do seu header */
+}
+
+
+/* CABECALHO MOBILE */
+
+  .cabecalho__mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #16191d;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.redes-sociais__mobile{
+  width: 35px;
+  height: 35px;
+}
+
+.logotipo__mobile{
+    width: 65px;
+    height: auto;
+}
+
+.esquerda{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+    /* ESTILO MENU MOBILE */
+  .menu-branco{
+    width: 70px;
+    height: auto;
+    z-index: 1000;
+  }
+
+  .menu__mobile {
+  background-color: var(--cinza-mobile);
+  width: 100vw;
+  max-height: 0;
+  position: fixed;
+  top: 5.5rem;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  display: block;
+  
+}
+
+.menu__mobile.abrir__menu {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.menu__mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.menu__mobile li {
+  margin: 20px 0;
+}
+
+.menu__mobile a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--fonte-principal);
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+  padding-left: 0px;
+}
+
+.menu__mobile.abrir__menu ~ .overlay__menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+  .overlay__menu {
+  background-color: #000000d1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  z-index: 888;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+/* MAIN */
+
+.titulo{
+  margin-top: 1em;
+  color:var(--cinza-mobile);
+  text-align: center;
+  font-size: 30px;
+  font-family: var(--fonte-principal);
+}
+
+.cards__imagens {
+  margin: 1em 0em 5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px 0;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 0 20px;
+  width: 350px;
+  text-align: center;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+
+.produto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 1.8em;
+}
+
+.img__pomada{
+  width: 300px;
+  height:350px;
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.conteudo__texto{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 10px;
+}
+
+.conteudo__texto p{
+  font-family: var(--fonte-secundaria);
+  font-size: 10px;
+  width: 100%; /* ou remova completamente */
+  text-align: justify;
+  padding: 0 10px;
+
+}
+.conteudo__texto h3{
+  text-align: start;
+  margin-left: 0.5em;
+  color: rgb(47, 47, 47);
+}
+
+.botao__agendar {
+  margin: 10px;
+  display: inline-block;
+  padding: 10px 25px;
+  font-family: var(--fonte-secundaria);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, #f1c40f 0%, #e67e22 100%);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* RODAPE */
+hr{
+  background-color: var(--cinza-mobile);
+  padding: 0.04em;
+}
+.rodape__mobile{
+  font-family: var(--fonte-secundaria);
+  background-color: var(--cor-background-clara);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--cor-primaria);
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
