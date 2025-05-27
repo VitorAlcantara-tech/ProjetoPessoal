@@ -188,8 +188,13 @@ nav ul .separador {
   margin-right: 15rem;
   gap: 10px;
 }
-.imagem__coffe{
+.imagem__coffe, .imagem__pomadapo{
   margin: 5rem 2rem 4rem 5rem ;
+}
+
+.pomada-em-po{
+  width: 500px;
+  height: auto;
 }
 
 .imagem__coffe img{
@@ -228,6 +233,8 @@ nav ul .separador {
   font-size: 1.5rem;
   letter-spacing: 1px;
 }
+
+
 
 .botao__agendar {
   margin-top: 10px;

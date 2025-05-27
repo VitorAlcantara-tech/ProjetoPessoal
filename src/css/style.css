@@ -231,6 +231,7 @@ body {
     font-weight: 500;
     color: var(--cor-principal);
     display: none;
+    text-align:center;
 }
 
 .imagem__supreme__mobile{
@@ -654,13 +655,16 @@ hr{
   }
   .apresentacao__conteudo {
     width: 600px;
-    font-size: 1.56rem;
-    font-family: var(--fonte-principal);
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
   }
 
   .apresentacao__conteudo__titulo{
     font-size: 2.8rem;
+    font-family: var(--fonte-principal);
   }
+
 
   .img__esquerda{
     width: 550px;
