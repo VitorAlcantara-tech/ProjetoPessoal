@@ -202,6 +202,13 @@ nav ul .separador {
   height: auto;
 }
 
+.imagem__balm__descricao{
+  width: 450px;
+  height: auto;
+    margin: 5rem 2rem 4rem 5rem ;
+
+}
+
 .conteudo__pomada__titulo h1{
   font-family: var(--fonte-principal);
   font-size: 2.4rem;

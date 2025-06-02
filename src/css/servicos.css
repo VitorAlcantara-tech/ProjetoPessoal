@@ -191,13 +191,14 @@ main{
   
 }
 
-
 .card__matheus, .card__gabriel{
   position: relative;
-  width: 500px;
+  width: 450px;
   height: auto;
   overflow: hidden;
-  margin: 25px
+  margin: 25px;
+  text-align: center;
+
 }
 
 .fotoMatheus, .fotoGabriel {
@@ -207,19 +208,12 @@ main{
   border-radius: 1rem;
 }
 
-.titulo__funcionarios{
-  text-align: center;
-  color:#fdcb06;
-  text-shadow: 0 2px 5px black;
-  font-size: 34px;
-}
-
 .botao__agendar__profissionais {
   display: inline-block;
   padding: 15px 50px;
   font-family: var(--fonte-principal);
   letter-spacing: 1px;
-  font-size: 2rem;
+  font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
@@ -231,6 +225,7 @@ main{
   text-decoration: none;
   position: relative;
   overflow: hidden;
+  margin-top: 2rem;
 }
 
 .botao__agendar__profissionais::before {
