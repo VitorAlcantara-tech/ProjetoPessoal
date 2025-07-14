@@ -3,7 +3,7 @@
 :root{
   --cor-primaria: rgb(23, 23, 23);
   --cor-secundaria:  #f1c40f;
-  --background: #ededed;
+  --cor-background-clara: #ededed;
 
   --fonte-principal: "Bebas Neue", sans-serif;
   --fonte-secundaria: 'Montserrat', sans-serif;
@@ -17,10 +17,7 @@
 
 body {
   font-family: var(--fonte-principal);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
-  background-color: var(--background);
+  background-color: var(--cor-background-clara);
 }
   
 header .Logotipo {
@@ -40,7 +37,6 @@ header {
   background-color: var(--cor-primaria);
 }
   
-  
 header ul {
   display: flex;
   justify-content: space-between;
@@ -52,7 +48,7 @@ header ul {
   font-family: var(--fonte-principal);
 }
   
-.nav__elementos{
+a {
   padding: 10px 20px;
   text-decoration: none;
   color: white;
@@ -64,23 +60,6 @@ header a:hover {
   text-underline-offset: 15px;
   color: #f1c40f; /* Destaque ao passar o mouse */
 }
-  
-.instagram__cabecalho{
-      width: 40px;
-      height: 40px;
-      transition: 0.2s;
-    }
-
-    .instagram{
-      width: 30px;
-      height: 30px;
-      transition: 0.2s;
-    }
-
-     .instagram__cabecalho:hover, .instagram:hover, .whatsapp:hover, .facebook:hover, .phone:hover{
-        transform: scale(1.075);
-    }
-
 nav ul .separador {
   width: 1px;       /* largura da coluna */
   height: 20px;     /* altura da coluna */
@@ -88,11 +67,28 @@ nav ul .separador {
   opacity: 0.5;     /* opcional: deixa mais suave */
 }
 
-.conteudo{
-  margin-top: 130px;
+
+.instagram__cabecalho {
+  width: 40px;
+  height: 40px;
+  transition: 0.2s;
 }
 
-.titulo{
+.instagram {
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
+}
+
+.instagram__cabecalho:hover,
+.instagram:hover,
+.whatsapp:hover,
+.facebook:hover,
+.phone:hover {
+  transform: scale(1.075);
+}
+
+.titulo {
   margin-top: 3em;
   font-family: var(--fonte-principal);
   font-size: 3.4rem;
@@ -108,9 +104,9 @@ nav ul .separador {
   height: 350px;
 }
 
-.img__pomada{
+.img__pomada {
   width: 300px;
-  height:350px;
+  height: 350px;
   display: block;
   object-fit: cover;
   border-radius: 5px;
@@ -154,7 +150,7 @@ nav ul .separador {
   justify-content: center;
   background-color: rgb(255, 255, 255);
   border-radius: 2px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0 20px;
   width: 350px;
   height: 460px;
@@ -162,78 +158,81 @@ nav ul .separador {
   letter-spacing: 1px;
 }
 
-.conteudo__texto{
+.conteudo__texto {
   text-decoration: none;
   color: inherit;
 }
 
-.imagens__descricao{
+.imagens__descricao {
   color: var(--cor-primaria);
 }
-.conteudo__texto h3{
+
+.conteudo__texto h3 {
   color: rgb(47, 47, 47);
 }
 
 
 
-.conteudo__pomada{
+.conteudo__pomada {
   margin-top: 130px;
   display: flex;
   align-items: center;
 }
 
-.pomada__escritos{
+.pomada__escritos {
   display: flex;
   flex-direction: column;
   margin-right: 15rem;
   gap: 10px;
 }
-.imagem__coffe, .imagem__pomadapo{
-  margin: 5rem 2rem 4rem 5rem ;
+
+.imagem__coffe,
+.imagem__pomadapo {
+  margin: 5rem 2rem 4rem 5rem;
 }
 
-.pomada-em-po{
+.pomada-em-po {
   width: 500px;
   height: auto;
 }
 
-.imagem__coffe img{
+.imagem__coffe img {
   width: 600px;
   height: auto;
 }
 
-.imagem__balm__descricao{
+.imagem__balm__descricao {
   width: 450px;
   height: auto;
-    margin: 5rem 2rem 4rem 5rem ;
+  margin: 5rem 2rem 4rem 5rem;
 
 }
 
-.conteudo__pomada__titulo h1{
+.conteudo__pomada__titulo h1 {
   font-family: var(--fonte-principal);
   font-size: 2.4rem;
   letter-spacing: 1px;
 }
 
-.conteudo__pomada__titulo h2{
+.conteudo__pomada__titulo h2 {
   font-family: var(--fonte-principal);
   font-size: 2rem;
   letter-spacing: 1px;
 }
 
-.conteudo__pomada__texto{
+.conteudo__pomada__texto {
   font-family: var(--fonte-secundaria);
   font-weight: 500;
   font-size: 1.3rem;
 }
 
-.conteudo__po__texto{
+.conteudo__po__texto {
   font-size: 1.1rem;
   font-weight: 500;
   font-family: var(--fonte-secundaria);
 }
 
-.pomada__texto__final{
+.pomada__texto__final {
   text-align: center;
   align-items: center;
   margin-top: 32px;
@@ -289,12 +288,12 @@ nav ul .separador {
 }
 
 
-.cerveja__estrela{
+.cerveja__estrela {
   display: flex;
   align-items: center;
 }
 
-.estrela__texto{
+.estrela__texto {
   margin: 0 18rem 0 4rem;
   font-family: var(--fonte-principal);
   font-size: 1.5rem;
@@ -335,7 +334,8 @@ nav ul .separador {
   opacity: 1;
 }
 
-#prev-button, #next-button {
+#prev-button,
+#next-button {
   width: 30px;
   height: 30px;
   border: none;
@@ -343,7 +343,8 @@ nav ul .separador {
   cursor: pointer;
 }
 
-#prev-button img, #next-button img {
+#prev-button img,
+#next-button img {
   width: 100%;
   height: 100%;
 }
@@ -353,14 +354,14 @@ nav ul .separador {
 }
 
 .rodape {
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--cor-primaria);
-    color: #fff;
-    padding: 20px 0;
-    font-family: var(--fonte-secundaria);
-    font-size: 15px;
-  }
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--cor-primaria);
+  color: #fff;
+  padding: 20px 0;
+  font-family: var(--fonte-secundaria);
+  font-size: 15px;
+}
 
 .rodape__menu {
   text-align: center;
@@ -394,62 +395,62 @@ nav ul .separador {
 }
 
 
-.rodape__informacoes__esquerda{
+.rodape__informacoes__esquerda {
   display: flex;
   flex-direction: column;
   font-family: var(--fonte-secundaria);
   font-size: 10px;
   margin-bottom: 1.5%;
-  
+
 }
 
-  .rodape__logotipo{
-    width: 150px;
-    height: 150px;
-  }
-  
-  .rodape__informacoes__direita{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.rodape__logotipo {
+  width: 150px;
+  height: 150px;
+}
 
-  .redes-sociais{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.rodape__informacoes__direita {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-.facebook{
-    width: 30px;
-    height: 30px;
-    transition: 0.2s;
-  }
+.redes-sociais {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .whatsapp{
-    width: 25px;
-    height: 25px;
-    transition: 0.2s;
-  }
+.facebook {
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
+}
 
-  .phone{
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-    transition: 0.2s;
-  }
+.whatsapp {
+  width: 25px;
+  height: 25px;
+  transition: 0.2s;
+}
 
-  .telefone{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-family: var(--fonte-secundaria);
-    margin: 0.5em 2.5em 0 0;
-  }
+.phone {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
 
-  .rodape__assinatura{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 5em;
-    font-size: 10px;
-  }
+.telefone {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: var(--fonte-secundaria);
+  margin: 0.5em 2.5em 0 0;
+}
+
+.rodape__assinatura {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5em;
+  font-size: 10px;
+}

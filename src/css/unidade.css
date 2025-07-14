@@ -90,18 +90,17 @@ nav ul .separador {
 }
 
 .icone__localizacao{
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
 }
 
 .mapa__descricao{
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .mapa__titulo{
-  display: flex;
-  justify-content: flex-start;
   font-size: 2.6rem;
 }
 
@@ -112,14 +111,15 @@ nav ul .separador {
 
 .pagina__secundaria{
   display: flex;
+  align-items: center;
   width: 100%;
   min-height: 100vh;
   background-color: var(--fonte-secundaria);
 }
 
 .relogio{
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 .atendimento{
@@ -128,7 +128,10 @@ nav ul .separador {
   align-items: center;
   justify-content: flex-start;
   margin: 0 10% 0 25%;
-  
+}
+
+.atendimento div{
+  margin-bottom: 2rem;
 }
 
 .titulo__secundario{

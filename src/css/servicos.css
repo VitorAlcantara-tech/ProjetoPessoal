@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
   --cor-primaria: rgb(23, 23, 23);
-  --cor-secundaria:  #f1c40f;
-    --cor-background-clara: #ededed;
+  --cor-secundaria: #f1c40f;
+  --cor-background-clara: #ededed;
 
   --fonte-principal: "Bebas Neue", sans-serif;
   --fonte-secundaria: 'Montserrat', sans-serif;
@@ -19,17 +19,17 @@ body {
   font-family: var(--fonte-principal);
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   background-color: var(--cor-background-clara);
 }
-  
+
 header .Logotipo {
   position: absolute;
   top: 0;
-  left : 30px;
+  left: 30px;
   width: 130px;
 }
-  
+
 header {
   position: absolute;
   top: 0;
@@ -39,8 +39,8 @@ header {
   padding: 40px;
   background-color: var(--cor-primaria);
 }
-  
-  
+
+
 header ul {
   display: flex;
   justify-content: space-between;
@@ -51,37 +51,44 @@ header ul {
   font-size: 1.6rem;
   font-family: var(--fonte-principal);
 }
-  
+
 a {
   padding: 10px 20px;
   text-decoration: none;
   color: white;
-  transition: all 0.2s ease; /* Transição para suavizar o hover */
+  transition: all 0.2s ease;
+  /* Transição para suavizar o hover */
 }
 
 header a:hover {
   text-decoration: underline;
   text-underline-offset: 15px;
-  color: #f1c40f; /* Destaque ao passar o mouse */
+  color: #f1c40f;
+  /* Destaque ao passar o mouse */
 }
 
 nav ul .separador {
-  width: 1px;       /* largura da coluna */
-  height: 20px;     /* altura da coluna */
-  background-color: white; /* ou outra cor que combine */
-  opacity: 0.5;     /* opcional: deixa mais suave */
+  width: 1px;
+  /* largura da coluna */
+  height: 20px;
+  /* altura da coluna */
+  background-color: white;
+  /* ou outra cor que combine */
+  opacity: 0.5;
+  /* opcional: deixa mais suave */
 }
 
-main{
+main {
   margin: 10m 0;
 }
 
-.titulo{
+.titulo {
   margin-top: 3em;
   font-family: var(--fonte-principal);
   font-size: 3.4rem;
   text-align: center;
 }
+
 .cards__imagens {
   margin: 1em 1em 2em;
   display: flex;
@@ -89,10 +96,12 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+
 }
 
-.corte, .barba, .cortemaisbarba{
+.corte,
+.barba,
+.cortemaisbarba {
   width: 300px;
   height: 350px;
   border-radius: 15px;
@@ -102,7 +111,7 @@ main{
 .box {
   border: 2px solid var(--cor-primaria);
   border-radius: 2px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px 20px 0 20px;
   width: 350px;
   height: 500px;
@@ -110,12 +119,12 @@ main{
   transition: transform 0.3s ease;
   letter-spacing: 1px;
 }
-  
+
 .box:hover {
   transform: translateY(-5px);
 }
 
-.imagens__descricao{
+.imagens__descricao {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -161,22 +170,23 @@ main{
   transform: rotate(45deg) translate(0, 0);
 }
 
-.tesoura__centro{
+.tesoura__centro {
   text-align: center;
 }
-.tesoura{
+
+.tesoura {
   width: 150px;
   height: 130px;
 }
 
-.profissionais{
+.profissionais {
   width: 100%;
   height: auto;
   background-color: var(--cor-background-clara);
   padding: 25px;
 }
 
-.titulo__profissionais{
+.titulo__profissionais {
   font-family: var(--fonte-principal);
   font-size: 3.4rem;
   text-align: center;
@@ -184,14 +194,16 @@ main{
 
 .cards__profissionais {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1.8rem;
   flex-wrap: wrap;
-  
+
 }
 
-.card__matheus, .card__gabriel{
+.card__matheus,
+.card__gabriel {
   position: relative;
   width: 450px;
   height: auto;
@@ -201,7 +213,8 @@ main{
 
 }
 
-.fotoMatheus, .fotoGabriel {
+.fotoMatheus,
+.fotoGabriel {
   width: 100%;
   display: block;
   transition: 0.3s ease;
@@ -249,25 +262,27 @@ main{
   transform: rotate(45deg) translate(0, 0);
 }
 
-.profissionais__botoes{
+.profissionais__botoes {
   display: flex;
   gap: 250px;
 }
-.alinhar__card{
+
+.alinhar__card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .rodape {
   margin-top: 5em;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(23, 23, 23);
-    color: #fff;
-    padding: 20px 0;
-    font-family: var(--fonte-secundaria);
-    font-size: 15px;
-  }
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(23, 23, 23);
+  color: #fff;
+  padding: 20px 0;
+  font-family: var(--fonte-secundaria);
+  font-size: 15px;
+}
 
 .rodape__menu {
   text-align: center;
@@ -301,79 +316,82 @@ main{
 }
 
 
-.rodape__informacoes__esquerda{
+.rodape__informacoes__esquerda {
   display: flex;
   flex-direction: column;
   font-family: var(--fonte-secundaria);
   font-size: 10px;
   margin-bottom: 1.5%;
-  
+
 }
 
-  .rodape__logotipo{
-    width: 150px;
-    height: 150px;
-  }
-  
-  .rodape__informacoes__direita{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.rodape__logotipo {
+  width: 150px;
+  height: 150px;
+}
 
-  .redes-sociais{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
+.rodape__informacoes__direita {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-.instagram__cabecalho{
-      width: 40px;
-      height: 40px;
-      transition: 0.2s;
-    }
+.redes-sociais {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
-    .instagram{
-      width: 30px;
-      height: 30px;
-      transition: 0.2s;
-    }
+.instagram__cabecalho {
+  width: 40px;
+  height: 40px;
+  transition: 0.2s;
+}
 
-     .instagram__cabecalho:hover, .instagram:hover, .whatsapp:hover, .facebook:hover, .phone:hover{
-        transform: scale(1.075);
-    }
+.instagram {
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
+}
 
-.facebook{
-    width: 30px;
-    height: 30px;
-    transition: 0.2s;
-  }
+.instagram__cabecalho:hover,
+.instagram:hover,
+.whatsapp:hover,
+.facebook:hover,
+.phone:hover {
+  transform: scale(1.075);
+}
 
-  .whatsapp{
-    width: 25px;
-    height: 25px;
-    transition: 0.2s;
-  }
+.facebook {
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
+}
 
-  .phone{
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-    transition: 0.2s;
-  }
+.whatsapp {
+  width: 25px;
+  height: 25px;
+  transition: 0.2s;
+}
 
-  .telefone{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-family: var(--fonte-secundaria);
-    margin: 0.5em 2.5em 0 0;
-  }
+.phone {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
 
-  .rodape__assinatura{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 5em;
-    font-size: 10px;
-  }
-  
+.telefone {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: var(--fonte-secundaria);
+  margin: 0.5em 2.5em 0 0;
+}
+
+.rodape__assinatura {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5em;
+  font-size: 10px;
+}

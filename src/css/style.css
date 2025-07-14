@@ -545,8 +545,14 @@ hr{
       font-family: var(--fonte-principal);
   }
 
+  .texto__background{
+    width: 100%;
+  }
+
   .titulo{
     letter-spacing: 2px;
+    font-size: 5.5rem;
+    font-weight: 600;
   }
 
   /* O overlay escuro */
@@ -570,13 +576,12 @@ hr{
   }
 
   .background__barbearia > div {
-    max-width: 800px;
+    max-width: 1000Spx;
     padding-top: 100px; 
   }
 
   .frase__principal{
-    width: 650px;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     margin-bottom: 2em;
   }
 
