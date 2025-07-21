@@ -336,6 +336,7 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    font-family: var(--fonte-principal);
 }
 
 .fotos__mobile{
