@@ -36,7 +36,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 10;
-  padding: 40px;
+  padding: clamp(2.00rem, 2.5rem, 4.5rem);
   background-color: var(--cor-primaria);
 }
 
@@ -46,9 +46,9 @@ header ul {
   justify-content: space-between;
   list-style: none;
   align-items: center;
-  padding-top: 10px;
-  padding-inline: 200px;
-  font-size: 1.6rem;
+  padding-top: clamp(0.50rem, 0.62rem, 0.74rem);
+  padding-inline: clamp(10.00rem, 12.50rem, 15.00rem);
+  font-size: clamp(1.28rem, 1.6rem, 3rem);
   font-family: var(--fonte-principal);
 }
 
@@ -57,7 +57,7 @@ a {
   text-decoration: none;
   color: white;
   transition: all 0.2s ease;
-  /* Transição para suavizar o hover */
+  white-space: nowrap;
 }
 
 header a:hover {
@@ -78,14 +78,11 @@ nav ul .separador {
   /* opcional: deixa mais suave */
 }
 
-main {
-  margin: 10m 0;
-}
 
 .titulo {
   margin-top: 3em;
   font-family: var(--fonte-principal);
-  font-size: 3.4rem;
+  font-size: clamp(2.72rem, 3.40rem, 4.08rem);
   text-align: center;
 }
 
@@ -102,8 +99,8 @@ main {
 .corte,
 .barba,
 .cortemaisbarba {
-  width: 300px;
-  height: 350px;
+  width: 75%;
+  height: auto;
   border-radius: 15px;
   margin-top: 1rem;
 }
@@ -112,12 +109,13 @@ main {
   border: 2px solid var(--cor-primaria);
   border-radius: 2px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px 20px 0 20px;
-  width: 350px;
-  height: 500px;
+  margin: 0px 20px 0 20px;
+  width: 27%;
+  height: 50%;
   text-align: center;
   transition: transform 0.3s ease;
   letter-spacing: 1px;
+  flex-wrap: wrap;
 }
 
 .box:hover {
@@ -130,12 +128,20 @@ main {
   justify-content: flex-start;
 }
 
+.imagens__descricao h2{
+  font-size: clamp(1.5rem, 2vw, 3rem)
+}
+
+.imagens__descricao h3{
+  font-size: clamp(1.2rem, 1.7vw, 2.7rem)
+}
+
 .botao__agendar {
   margin: 0.7em;
   display: inline-block;
-  padding: 10px 32px;
+  padding: 1rem 5%;
   font-family: var(--fonte-secundaria);
-  font-size: 1.1rem;
+  font-size: clamp(1.00rem, 1.25rem, 1.50rem);
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
@@ -183,39 +189,36 @@ main {
   width: 100%;
   height: auto;
   background-color: var(--cor-background-clara);
-  padding: 25px;
+
 }
 
 .titulo__profissionais {
   font-family: var(--fonte-principal);
-  font-size: 3.4rem;
+  font-size: clamp(2.72rem, 3.40rem, 4.08rem);
   text-align: center;
 }
 
 .cards__profissionais {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.8rem;
+  gap: 2rem;
   flex-wrap: wrap;
-
+  margin-top: 20px;
 }
 
-.card__matheus,
-.card__gabriel {
-  position: relative;
-  width: 450px;
-  height: auto;
+.card {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  margin: 25px;
-  text-align: center;
-
+  margin: 10px 0px;
+  align-items: center;
+  width: 28%;
 }
 
-.fotoMatheus,
-.fotoGabriel {
+.foto {
   width: 100%;
+  height: auto;
   display: block;
   transition: 0.3s ease;
   border-radius: 1rem;
@@ -223,20 +226,18 @@ main {
 
 .botao__agendar__profissionais {
   display: inline-block;
-  padding: 15px 50px;
+  padding: 1rem 15%;
   font-family: var(--fonte-principal);
   letter-spacing: 1px;
-  font-size: 28px;
+  font-size: clamp(1.5rem, 2vw, 3rem);
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
   background: linear-gradient(135deg, #efc210 0%, #e67e22 100%);
   border: 0px solid var(--cor-primaria);
   border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
-  position: relative;
   overflow: hidden;
   margin-top: 2rem;
 }
@@ -262,14 +263,9 @@ main {
   transform: rotate(45deg) translate(0, 0);
 }
 
-.profissionais__botoes {
-  display: flex;
-  gap: 250px;
-}
 
 .alinhar__card {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -281,7 +277,7 @@ main {
   color: #fff;
   padding: 20px 0;
   font-family: var(--fonte-secundaria);
-  font-size: 15px;
+  font-size: clamp(0.75rem, 0.94rem, 1.13rem);
 }
 
 .rodape__menu {
@@ -290,7 +286,7 @@ main {
 
 .rodape__menu h5 {
   color: var(--cor-secundaria);
-  font-size: 15px;
+  font-size: clamp(0.75rem, 0.94rem, 1.13rem);
   margin-bottom: 1em;
   font-family: var(--fonte-secundaria);
 }
@@ -320,7 +316,7 @@ main {
   display: flex;
   flex-direction: column;
   font-family: var(--fonte-secundaria);
-  font-size: 10px;
+  font-size: clamp(0.50rem, 0.62rem, 0.74rem);
   margin-bottom: 1.5%;
 
 }
@@ -393,5 +389,5 @@ main {
   display: flex;
   justify-content: flex-end;
   margin-top: 5em;
-  font-size: 10px;
+  font-size: clamp(0.50rem, 0.62rem, 0.74rem);
 }

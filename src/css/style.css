@@ -68,6 +68,7 @@ body {
       text-decoration: none;
       color: white;
       transition: all 0.2s ease; /* Transição para suavizar o hover */
+      white-space: nowrap;
     }
 
   .cabecalho a:hover {
