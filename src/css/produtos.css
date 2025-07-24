@@ -234,13 +234,7 @@ nav ul .separador {
 .conteudo__pomada__texto {
   font-family: var(--fonte-secundaria);
   font-weight: 500;
-  font-size: 1.3rem;
-}
-
-.conteudo__po__texto {
-  font-size: 1.1rem;
-  font-weight: 500;
-  font-family: var(--fonte-secundaria);
+  font-size: 20px;
 }
 
 .pomada__texto__final {
@@ -301,27 +295,25 @@ nav ul .separador {
 
 .cerveja__estrela {
   display: flex;
-  align-items: center;
+  align-items: center;     /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+  gap: clamp(1rem, 4vw, 4rem);
+  min-height: 100vh;
+  margin-left: 3rem;
 }
+
 
 .estrela__texto {
-  margin: 0 18rem 0 4rem;
+  padding-inline-end: 100px;
   font-family: var(--fonte-principal);
-  font-size: 1.5rem;
-}
-
-.slider {
-  width: 550px;
-  height: 672px;
+  font-size: 20px;
 }
 
 .container-slider {
-  margin: 7rem 0 4rem 9rem;
   display: flex;
-  width: 100%;
   min-height: 100vh;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
 }
 
