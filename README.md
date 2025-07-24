@@ -49,7 +49,7 @@ O site foi desenvolvido com técnicas de **design responsivo**, garantindo visua
 
 *Acesse a demonstração do projeto*
 
-https://33barbercrew.com.br/
+https://projeto-pessoal-three.vercel.app/
 
 ---
 
